@@ -18,7 +18,7 @@ const getSingle = async (req,res) => {
     });
 };
 
-module.exports = (
+module.exports = {
     getAll, 
     getSingle
-);
+};

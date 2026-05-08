@@ -5,7 +5,7 @@ const getAll = async (req,res) => {
     const result = await mongodb.getDatabase('cluster0').db('data0').collection('meetW1').find();
     result.toArray().then((contacts) => {
         res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(contacts);
+        res.status(200).json(contacts[0]);
     });
 };
 

@@ -5,6 +5,6 @@ const professionalControllers = require('../controllers/professional.js');
 
 router.get('/', professionalControllers.getAll);
 
-router.get('/:id', professionalControllers.getAll);
+router.get('/:id', professionalControllers.getSingle);
 
 module.exports = router;
